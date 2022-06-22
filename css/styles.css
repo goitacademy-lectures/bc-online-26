@@ -1,0 +1,274 @@
+:root {
+  /* Fonts */
+  --main-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  /* Tetx colors */
+  --main-txt-cl: #22343d;
+  --secondary-txt-cl: #737373;
+  --accent-txt-cl: #02897a;
+  --light-txt-cl: #ffffff;
+  /* Background colors */
+  --main-bg-cl: ;
+  --secondary-bg-cl: ;
+  --accent-bg-cl: #02897a;
+  --light-bg-cl: #ffffff;
+  --btn-bg-cl: #f3f3f3;
+  /* Other visuals vars */
+  --logo-cl: #173a56;
+  --brdr-cl: #bcd0e5;
+  --brdr-rad-sm: 8px;
+  --brdr-rad-lg: 32px;
+  --brdr-rad-crcl: 50%;
+  --items: 1;
+  --indent: 30px;
+}
+
+/* Base styles */
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+  font-size: 16px;
+  line-height: 1.62;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+}
+.small-txt {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.bold-txt {
+  font-weight: 700;
+}
+.main-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #173a56;
+
+  background-color: var(--light-bg-cl);
+  border: 1px solid var(--brdr-cl);
+  border-radius: var(--brdr-rad-sm);
+  cursor: pointer;
+}
+.accent-btn {
+  color: var(--light-txt-cl);
+  background-color: var(--accent-bg-cl);
+  border: 1px solid transparent;
+}
+.switcher-btn {
+  background-color: var(--btn-bg-cl);
+  border: none;
+  border-radius: var(--brdr-rad-crcl);
+  cursor: pointer;
+}
+/**
+  |============================
+  | Header section
+  |============================
+*/
+.logo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: var(--logo-cl);
+}
+.header-link {
+  line-height: 1.75;
+}
+.header-link-current {
+  font-weight: 600;
+}
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+.hero-desc {
+  font-size: 18px;
+  line-height: 1.56;
+}
+
+/**
+  |============================
+  | Features section
+  |============================
+*/
+.features-subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.features-btn {
+  text-transform: uppercase;
+}
+
+/**
+  |============================
+  | Managment section
+  |============================
+*/
+.managment-subtitle {
+  font-weight: 600;
+}
+
+/**
+  |============================
+  | Support section
+  |============================
+*/
+
+/**
+  |============================
+  | Collaboration section
+  |============================
+*/
+.collaboration-subtitle {
+  font-weight: 600;
+}
+
+/**
+  |============================
+  | Staff section
+  |============================
+*/
+.staff-desc {
+  font-weight: 500;
+}
+.staff-text {
+  font-weight: 500;
+}
+
+/**
+  |============================
+  | Strategies section
+  |============================
+*/
+.strategies-desc {
+  font-weight: 500;
+}
+.strategies-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+}
+
+/**
+  |============================
+  | Price section
+  |============================
+*/
+.price {
+  font-family: var(--secondary-font);
+}
+.price-desc {
+  font-weight: 500;
+}
+.price-card-active {
+  background-color: var(--accent-bg-cl);
+  color: var(--light-txt-cl);
+}
+.price-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.67;
+}
+.price-card-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.38;
+  letter-spacing: 0.2px;
+}
+.price-card-btn {
+  color: var(--accent-bg-cl);
+  background-color: var(--light-bg-cl);
+}
+
+/**
+  |============================
+  | Feedback section
+  |============================
+*/
+.feedback-title {
+  line-height: 1.78;
+  letter-spacing: 0.2px;
+}
+.feedback-desc {
+  font-weight: 500;
+  line-height: 1.75;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+.feedback-rate {
+  color: #f3cd03;
+}
+.feedback-text {
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+  color: var(--secondary-txt-cl);
+}
+.feedback-author {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: var(--accent-txt-cl);
+}
+.feedback-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.2px;
+}
+
+/**
+  |============================
+  | Promo section
+  |============================
+*/
+.promo {
+  background-color: var(--accent-bg-cl);
+  border-radius: var(--brdr-rad-lg);
+}
+.promo-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.51;
+  color: var(--light-txt-cl);
+}
+.promo-btn {
+  font-size: 20px;
+  color: var(--accent-txt-cl);
+}
+
+/**
+  |============================
+  | Footer section
+  |============================
+*/
+.footer-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.footer-resource-link {
+  line-height: 2.19;
+}
+.footer-rights {
+  line-height: 1.88;
+  text-align: center;
+}
