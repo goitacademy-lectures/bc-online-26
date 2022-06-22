@@ -12,6 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -19,55 +27,71 @@
   <body>
     <!-- Header section -->
     <header class="header">
-      <a class="logo link" href="./">
-        <img
-          class="logo-img link"
-          src="./images/header/logo.png"
-          alt="logo"
-          width="40"
-          height="36"
-        />
-        <span class="logo-txt">Product</span>
-      </a>
-      <ul class="header-list list">
-        <li class="header-item">
-          <a class="header-link header-link-current link" href="">Product</a>
-        </li>
-        <li class="header-item">
-          <a class="header-link link" href="">Pricing</a>
-        </li>
-        <li class="header-item">
-          <a class="header-link link" href="">Customers</a>
-        </li>
-        <li class="header-item">
-          <a class="header-link link" href="">Resources</a>
-        </li>
-      </ul>
-      <ul class="header-main-btn-list list">
-        <li class="header-main-btn-item">
-          <button class="main-btn" type="button">Sign In</button>
-        </li>
-        <li class="header-main-btn-item">
-          <button class="main-btn accent-btn" type="button">Sign Up</button>
-        </li>
-      </ul>
-      <button class="switcher-btn" type="button">
-        <img src="./images/header/switch-icon.png" alt="switcher" width="32" height="32" />
-      </button>
+      <div class="container header-container">
+        <a class="logo link" href="./">
+          <img
+            class="logo-img link"
+            src="./images/header/logo.png"
+            alt="logo"
+            width="40"
+            height="36"
+          />
+          <span class="logo-txt">Product</span>
+        </a>
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="header-link header-link-current link" href="">Product</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="">Pricing</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="">Customers</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link link" href="">Resources</a>
+          </li>
+        </ul>
+        <ul class="header-main-btn-list list">
+          <li class="header-main-btn-item">
+            <button class="main-btn" type="button">Sign In</button>
+          </li>
+          <li class="header-main-btn-item">
+            <button class="main-btn accent-btn" type="button">Sign Up</button>
+          </li>
+        </ul>
+        <button class="switcher-btn" type="button">
+          <img
+            src="./images/header/switch-icon.png"
+            alt="switcher"
+            width="32"
+            height="32"
+          />
+        </button>
+      </div>
     </header>
     <main>
       <!-- Hero section -->
-      <section class="hero">
-        <h1 class="main-title">Work at the speed of thought</h1>
+      <section class="hero section">
+        <div class="container hero-container">
+          <div class="hero-left-side">
+        <h1 class="main-title">Work at the speed of&nbsp;thought</h1>
         <p class="hero-desc">
-          Tools, tutorials, design and innovation experts, all in one place! The most intuitive way
-          to imagine your next user experience.
+          Tools, tutorials, design and innovation experts, all in one place! The
+          most intuitive way to imagine your next user experience.
         </p>
-        <button class="main-btn" type="button">Get started</button>
-        <a class="hero-link link" href=""
-          ><img src="./images/hero/play-logo.png" alt="play logo" width="20" height="18" />Watch the
-          Video</a
+        <button class="main-btn hero-btn accent-btn" type="button">Get started</button>
+        
+        <a class="hero-link" href=""
+          ><img class="hero-icon"
+            src="./images/hero/play-logo.png"
+            alt="play logo"
+            width="20"
+            height="18"
+          />Watch the Video</a
         >
+        </div>
+        <div class="hero-right-side">
         <img
           class="hero-img"
           src="./images/hero/hero-pic.png"
@@ -75,6 +99,8 @@
           width="610"
           height="555"
         />
+        </div>
+        </div>
       </section>
 
       <!-- Features section -->
@@ -101,7 +127,9 @@
               height="50"
             />
             <h3 class="features-subtitle">Design surveys</h3>
-            <p class="features-txt">Sports betting, lottery and bingo playing for the fun</p>
+            <p class="features-txt">
+              Sports betting, lottery and bingo playing for the fun
+            </p>
           </li>
           <li class="features-item">
             <img
@@ -123,10 +151,14 @@
               height="50"
             />
             <h3 class="features-subtitle">Five second tests</h3>
-            <p class="features-txt">Personal choices and the overall personality of the person.</p>
+            <p class="features-txt">
+              Personal choices and the overall personality of the person.
+            </p>
           </li>
         </ul>
-        <button class="features-btn main-btn accent-btn" type="button">Sign up now</button>
+        <button class="features-btn main-btn accent-btn" type="button">
+          Sign up now
+        </button>
       </section>
 
       <!-- Managment section -->
@@ -136,22 +168,22 @@
           Management
         </h2>
         <p class="managment-desc">
-          The Myspace page defines the individual, his or her characteristics, traits, personal
-          choices and the overall personality of the person.
+          The Myspace page defines the individual, his or her characteristics,
+          traits, personal choices and the overall personality of the person.
         </p>
         <ul class="managment-list list">
           <li class="managment-item">
             <h3 class="managment-subtitle">Accessory makers</h3>
             <p class="managment-txt">
-              While most people enjoy casino gambling, sports betting, lottery and bingo playing for
-              the fun
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun
             </p>
           </li>
           <li class="managment-item">
             <h3 class="managment-subtitle">Alterationists</h3>
             <p class="managment-txt">
-              If you are looking for a new way to promote your business that won’t cost you more
-              money,
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
             </p>
           </li>
         </ul>
@@ -167,11 +199,12 @@
       <!-- Support section -->
       <section class="support section">
         <h2 class="section-title">
-          <span class="small-txt">Easier decision making for</span> Customer Support
+          <span class="small-txt">Easier decision making for</span> Customer
+          Support
         </h2>
         <p class="support-desc">
-          The Myspace page defines the individual, his or her characteristics, traits, personal
-          choices and the overall personality of the person.
+          The Myspace page defines the individual, his or her characteristics,
+          traits, personal choices and the overall personality of the person.
         </p>
         <ul class="support-list list">
           <li class="support-item">
@@ -182,7 +215,9 @@
               width="35"
               height="35"
             />
-            <p class="support-txt">Never worry about overpaying for your energy again.</p>
+            <p class="support-txt">
+              Never worry about overpaying for your energy again.
+            </p>
           </li>
           <li class="support-item">
             <img
@@ -193,7 +228,8 @@
               height="35"
             />
             <p class="support-txt">
-              We will only switch you to energy companies that we trust and will treat you right
+              We will only switch you to energy companies that we trust and will
+              treat you right
             </p>
           </li>
           <li class="support-item">
@@ -204,7 +240,9 @@
               width="35"
               height="35"
             />
-            <p class="support-txt">We track the markets daily and know where the savings are.</p>
+            <p class="support-txt">
+              We track the markets daily and know where the savings are.
+            </p>
           </li>
         </ul>
         <img
@@ -218,24 +256,27 @@
 
       <!-- Collaboration section -->
       <section class="collaboration section">
-        <h2 class="section-title"><span class="small-txt">Optimisation for</span> Collaborative</h2>
+        <h2 class="section-title">
+          <span class="small-txt">Optimisation for</span> Collaborative
+        </h2>
         <p class="collaboration-desc">
-          Few would argue that, despite the advancements of feminism over the past three decades,
-          women still face a double standard when it comes to their behavior.
+          Few would argue that, despite the advancements of feminism over the
+          past three decades, women still face a double standard when it comes
+          to their behavior.
         </p>
         <ul class="collaboration-list list">
           <li class="collaboration-item">
             <h3 class="collaboration-subtitle">Accessory makers</h3>
             <p class="collaboration-txt">
-              While most people enjoy casino gambling, sports betting, lottery and bingo playing for
-              the fun
+              While most people enjoy casino gambling, sports betting, lottery
+              and bingo playing for the fun
             </p>
           </li>
           <li class="collaboration-item">
             <h3 class="collaboration-subtitle">Alterationists</h3>
             <p class="collaboration-txt">
-              If you are looking for a new way to promote your business that won’t cost you more
-              money,
+              If you are looking for a new way to promote your business that
+              won’t cost you more money,
             </p>
           </li>
         </ul>
@@ -252,27 +293,45 @@
       <section class="staff section">
         <h2 class="section-title staff-title">Quick & Easy Process</h2>
         <p class="staff-desc">
-          Do you require some help for your project: Conception workshop, prototyping, marketing
-          strategy, landing page, Ux/UI?
+          Do you require some help for your project: Conception workshop,
+          prototyping, marketing strategy, landing page, Ux/UI?
         </p>
         <ul class="staff-list list">
           <li class="staff-item">
-            <img class="staff-avatar" src="./images/staff/avatar-1.png" alt="Staff member" />
+            <img
+              class="staff-avatar"
+              src="./images/staff/avatar-1.png"
+              alt="Staff member"
+            />
             <p class="staff-text">I can take care of your pitch</p>
           </li>
           <li class="staff-item">
-            <img class="staff-avatar" src="./images/staff/avatar-2.png" alt="Staff member" />
+            <img
+              class="staff-avatar"
+              src="./images/staff/avatar-2.png"
+              alt="Staff member"
+            />
             <p class="staff-text">I can prototype your app</p>
           </li>
           <li class="staff-item">
-            <img class="staff-avatar" src="./images/staff/avatar-3.png" alt="Staff member" />
+            <img
+              class="staff-avatar"
+              src="./images/staff/avatar-3.png"
+              alt="Staff member"
+            />
             <p class="staff-text">I can take care of your pitch</p>
           </li>
           <li class="staff-item">
-            <img class="staff-avatar" src="./images/staff/avatar-4.png" alt="Staff member" />
+            <img
+              class="staff-avatar"
+              src="./images/staff/avatar-4.png"
+              alt="Staff member"
+            />
             <p class="staff-text">I can help marketing strategy</p>
           </li>
-          <button class="main-btn accent-btn" type="button">Contact our expert</button>
+          <button class="main-btn accent-btn" type="button">
+            Contact our expert
+          </button>
         </ul>
       </section>
 
@@ -280,7 +339,8 @@
       <section class="strategies section">
         <h2 class="section-title">Contents Strategies</h2>
         <p class="strategies-desc">
-          We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+          We focus on ergonomics and meeting you where you work. It's only a
+          keystroke away.
         </p>
         <ul class="strategies-list list">
           <li class="strategies-item">
@@ -292,9 +352,15 @@
                 width="350"
                 height="185"
               />
-              <p class="strategies-author">By <span class="bold-txt">Wahid Ari</span> &#124;</p>
-              <time class="strategies-date" datetime="2019-03-03">03 March 2019</time>
-              <h3 class="strategies-subtitle">Increasing Prosperity With Positive Thinking</h3>
+              <p class="strategies-author">
+                By <span class="bold-txt">Wahid Ari</span> &#124;
+              </p>
+              <time class="strategies-date" datetime="2019-03-03"
+                >03 March 2019</time
+              >
+              <h3 class="strategies-subtitle">
+                Increasing Prosperity With Positive Thinking
+              </h3>
             </a>
           </li>
           <li class="item">
@@ -306,9 +372,15 @@
                 width="350"
                 height="185"
               />
-              <p class="strategies-author">By <span class="bold-txt">Wahid Ari</span> &#124;</p>
-              <time class="strategies-date" datetime="2019-03-03">03 March 2019</time>
-              <h3 class="strategies-subtitle">Motivation Is The First Step To Success</h3>
+              <p class="strategies-author">
+                By <span class="bold-txt">Wahid Ari</span> &#124;
+              </p>
+              <time class="strategies-date" datetime="2019-03-03"
+                >03 March 2019</time
+              >
+              <h3 class="strategies-subtitle">
+                Motivation Is The First Step To Success
+              </h3>
             </a>
           </li>
           <li class="item">
@@ -320,9 +392,15 @@
                 width="350"
                 height="185"
               />
-              <p class="strategies-author">By <span class="bold-txt">Wahid Ari</span> &#124;</p>
-              <time class="strategies-date" datetime="2019-03-03">03 March 2019</time>
-              <h3 class="strategies-subtitle">Success Steps For Your Personal Or Business</h3>
+              <p class="strategies-author">
+                By <span class="bold-txt">Wahid Ari</span> &#124;
+              </p>
+              <time class="strategies-date" datetime="2019-03-03"
+                >03 March 2019</time
+              >
+              <h3 class="strategies-subtitle">
+                Success Steps For Your Personal Or Business
+              </h3>
             </a>
           </li>
         </ul>
@@ -365,7 +443,9 @@
               <li class="price-card-item">Notifications</li>
               <li class="price-card-item">Landing Pages</li>
             </ul>
-            <button class="main-btn price-card-btn" type="button">Order Now</button>
+            <button class="main-btn price-card-btn" type="button">
+              Order Now
+            </button>
           </li>
           <li class="price-card">
             <h3 class="price-card-title">Premium</h3>
@@ -388,15 +468,17 @@
       <section class="feedback section">
         <h2 class="section-title feedback-title">What Clients Say</h2>
         <p class="feedback-desc">
-          Problems trying to resolve the conflict between the two major realms of Classical physics:
-          Newtonian mechanics
+          Problems trying to resolve the conflict between the two major realms
+          of Classical physics: Newtonian mechanics
         </p>
         <ul class="feedback-list list">
           <li class="feedback-item">
-            <div class="feedback-rate">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+            <div class="feedback-rate">
+              &#9733; &#9733; &#9733; &#9733; &#9734;
+            </div>
             <p class="feedback-text">
-              Product helps you see how many more days you need to work to reach your financial
-              goal.
+              Product helps you see how many more days you need to work to reach
+              your financial goal.
             </p>
             <div class="feedback-group">
               <img
@@ -411,10 +493,12 @@
             </div>
           </li>
           <li class="feedback-item">
-            <div class="feedback-rate">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+            <div class="feedback-rate">
+              &#9733; &#9733; &#9733; &#9733; &#9734;
+            </div>
             <p class="feedback-text">
-              Product helps you see how many more days you need to work to reach your financial
-              goal.
+              Product helps you see how many more days you need to work to reach
+              your financial goal.
             </p>
             <div class="feedback-group">
               <img
@@ -429,10 +513,12 @@
             </div>
           </li>
           <li class="feedback-item">
-            <div class="feedback-rate">&#9733; &#9733; &#9733; &#9733; &#9734;</div>
+            <div class="feedback-rate">
+              &#9733; &#9733; &#9733; &#9733; &#9734;
+            </div>
             <p class="feedback-text">
-              Product helps you see how many more days you need to work to reach your financial
-              goal.
+              Product helps you see how many more days you need to work to reach
+              your financial goal.
             </p>
             <div class="feedback-group">
               <img
@@ -451,7 +537,9 @@
 
       <!-- Promo section -->
       <article class="promo">
-        <h2 class="promo-title">Join 100 Compannies who boost their business with Product</h2>
+        <h2 class="promo-title">
+          Join 100 Compannies who boost their business with Product
+        </h2>
         <button class="main-btn promo-btn" type="button">Get This</button>
         <img
           class="promo-img"
@@ -566,16 +654,22 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-          <h2 class="footer-title">knowing you're always on the best energy deal.</h2>
+          <h2 class="footer-title">
+            knowing you're always on the best energy deal.
+          </h2>
           <form class="footer-form">
             <label>
               <input class="footer-form-input" type="email" />
             </label>
-            <button class="main-btn accent-btn" type="submit">Sign up Now</button>
+            <button class="main-btn accent-btn" type="submit">
+              Sign up Now
+            </button>
           </form>
         </div>
       </div>
-      <p class="footer-rights">Made With Love By Figmaland All Right Reserved</p>
+      <p class="footer-rights">
+        Made With Love By Figmaland All Right Reserved
+      </p>
     </footer>
   </body>
 </html>
