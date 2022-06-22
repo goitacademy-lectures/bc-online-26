@@ -30,8 +30,18 @@ body {
   font-size: 16px;
   line-height: 1.62;
 }
+.container {
+  width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid red;
+}
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
@@ -56,6 +66,7 @@ body {
   font-weight: 700;
 }
 .main-btn {
+  padding: 9px 24px;
   font-family: inherit;
   font-weight: 600;
   font-size: 16px;
@@ -83,17 +94,46 @@ body {
   | Header section
   |============================
 */
+.header-container{
+  display: flex;
+  align-items: center;
+}
 .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 237px;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   color: var(--logo-cl);
 }
+.logo-img{
+  margin-right: 16px;
+}
+.header-list{
+  display: flex;
+  margin-right: 24px;
+}
+.header-item:not(:last-child){
+  margin-right: 30px;
+}
 .header-link {
+  display: block;
+  padding-top: 26px;
+  padding-bottom: 26px;
   line-height: 1.75;
 }
 .header-link-current {
   font-weight: 600;
+}
+.header-main-btn-list{
+  display: flex;
+}
+.header-main-btn-item:not(:last-child){
+  margin-right: 24px;
+}
+.switcher-btn{
+  margin-left: auto;
 }
 /**
   |============================
