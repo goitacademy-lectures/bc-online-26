@@ -30,6 +30,27 @@ body {
   font-size: 16px;
   line-height: 1.62;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  /* margin-top: 0;
+ */
+ 
+}
+
+/* p:last-child {
+  margin-bottom: 0;
+} */
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .container {
   width: 1150px;
   padding-left: 20px;
@@ -38,33 +59,41 @@ body {
   margin-right: auto;
   outline: 1px solid red;
 }
+
 .list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .link {
   text-decoration: none;
   color: currentColor;
 }
+
 .main-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
+  margin-bottom: 18px;
 }
+
 .section-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.5;
 }
+
 .small-txt {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
 }
+
 .bold-txt {
   font-weight: 700;
 }
+
 .main-btn {
   padding: 9px 24px;
   font-family: inherit;
@@ -78,26 +107,32 @@ body {
   border-radius: var(--brdr-rad-sm);
   cursor: pointer;
 }
+
+
+
 .accent-btn {
   color: var(--light-txt-cl);
   background-color: var(--accent-bg-cl);
   border: 1px solid transparent;
 }
+
 .switcher-btn {
   background-color: var(--btn-bg-cl);
   border: none;
   border-radius: var(--brdr-rad-crcl);
   cursor: pointer;
 }
+
 /**
   |============================
   | Header section
   |============================
 */
-.header-container{
+.header-container {
   display: flex;
   align-items: center;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -107,42 +142,83 @@ body {
   line-height: 1.2;
   color: var(--logo-cl);
 }
-.logo-img{
+
+.logo-img {
   margin-right: 16px;
 }
-.header-list{
+
+.header-list {
   display: flex;
   margin-right: 24px;
 }
-.header-item:not(:last-child){
+
+.header-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .header-link {
   display: block;
   padding-top: 26px;
   padding-bottom: 26px;
   line-height: 1.75;
 }
+
 .header-link-current {
   font-weight: 600;
 }
-.header-main-btn-list{
+
+.header-main-btn-list {
   display: flex;
 }
-.header-main-btn-item:not(:last-child){
+
+.header-main-btn-item:not(:last-child) {
   margin-right: 24px;
 }
-.switcher-btn{
+
+.switcher-btn {
   margin-left: auto;
 }
+
 /**
   |============================
   | Hero section
   |============================
 */
+
+.hero {
+  padding-top: 25px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+}
+
+.hero-left-side {
+  width: 465px;
+}
+
+.hero-right-side {
+  margin-left: auto;
+}
+
 .hero-desc {
   font-size: 18px;
   line-height: 1.56;
+  margin-bottom: 45px;
+}
+
+.hero-btn {
+  margin-right: 30px;
+}
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--accent-txt-cl);
+  font-weight: 600;
+}
+
+.hero-icon {
+  margin-right: 9px;
 }
 
 /**
@@ -155,6 +231,7 @@ body {
   font-size: 22px;
   line-height: 1.5;
 }
+
 .features-btn {
   text-transform: uppercase;
 }
@@ -191,6 +268,7 @@ body {
 .staff-desc {
   font-weight: 500;
 }
+
 .staff-text {
   font-weight: 500;
 }
@@ -203,6 +281,7 @@ body {
 .strategies-desc {
   font-weight: 500;
 }
+
 .strategies-subtitle {
   font-weight: 700;
   font-size: 24px;
@@ -217,24 +296,29 @@ body {
 .price {
   font-family: var(--secondary-font);
 }
+
 .price-desc {
   font-weight: 500;
 }
+
 .price-card-active {
   background-color: var(--accent-bg-cl);
   color: var(--light-txt-cl);
 }
+
 .price-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.67;
 }
+
 .price-card-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.38;
   letter-spacing: 0.2px;
 }
+
 .price-card-btn {
   color: var(--accent-bg-cl);
   background-color: var(--light-bg-cl);
@@ -249,25 +333,30 @@ body {
   line-height: 1.78;
   letter-spacing: 0.2px;
 }
+
 .feedback-desc {
   font-weight: 500;
   line-height: 1.75;
   text-align: center;
   letter-spacing: 0.2px;
 }
+
 .feedback-rate {
   color: #f3cd03;
 }
+
 .feedback-text {
   line-height: 1.75;
   letter-spacing: 0.2px;
   color: var(--secondary-txt-cl);
 }
+
 .feedback-author {
   font-weight: 600;
   letter-spacing: 0.2px;
   color: var(--accent-txt-cl);
 }
+
 .feedback-text {
   font-weight: 500;
   font-size: 14px;
@@ -284,12 +373,14 @@ body {
   background-color: var(--accent-bg-cl);
   border-radius: var(--brdr-rad-lg);
 }
+
 .promo-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.51;
   color: var(--light-txt-cl);
 }
+
 .promo-btn {
   font-size: 20px;
   color: var(--accent-txt-cl);
@@ -305,9 +396,11 @@ body {
   font-size: 20px;
   line-height: 1.5;
 }
+
 .footer-resource-link {
   line-height: 2.19;
 }
+
 .footer-rights {
   line-height: 1.88;
   text-align: center;
