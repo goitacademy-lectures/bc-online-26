@@ -339,10 +339,28 @@ p {
   | Collaboration section
   |============================
 */
-.collaboration-subtitle {
-  font-weight: 600;
+.collaboration-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collaboration-left-side {
+  flex-basis: 486px;
 }
 
+.collaboration-desc {
+  margin-bottom: 30px;
+}
+.collaboration-item {
+  margin-bottom: 25px;
+}
+.collaboration-item:last-child {
+  margin-bottom: 0;
+}
+.collaboration-subtitle {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
 /**
   |============================
   | Staff section
