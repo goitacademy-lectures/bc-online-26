@@ -366,14 +366,44 @@ p {
   | Staff section
   |============================
 */
+.staff-title {
+  text-align: center;
+}
 .staff-desc {
+  margin-bottom: 40px;
+  text-align: center;
+  width: 542px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 500;
+}
+.staff-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 108px;
+  row-gap: 25px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.staff-item {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  flex-basis: 408px;
+}
+.staff-item:nth-child(4n + 2),
+.staff-item:nth-child(4n + 3) {
+  flex-direction: row-reverse;
 }
 
 .staff-text {
   font-weight: 500;
 }
-
+.staff-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /**
   |============================
   | Strategies section
