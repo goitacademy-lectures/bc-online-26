@@ -305,6 +305,34 @@ p {
   | Support section
   |============================
 */
+.support-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.support-right-side {
+  flex-basis: 486px;
+}
+
+.support-desc {
+  margin-bottom: 30px;
+}
+
+.support-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.support-item:last-child {
+  margin-bottom: 0;
+}
+
+.support-img {
+  margin-right: 30px;
+}
 
 /**
   |============================
